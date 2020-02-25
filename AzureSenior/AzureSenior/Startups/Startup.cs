@@ -11,7 +11,7 @@ namespace AzureSenior.Function.Startups
         public void Configure(IWebJobsBuilder webJobsBuilder)
         {
             webJobsBuilder = IocConfiguration.ConfigureAll(webJobsBuilder);
-            webJobsBuilder.Services.AddMvcCore().AddJsonFormatters();
+            webJobsBuilder.Services.AddMvcCore();
         }
     }
 }
